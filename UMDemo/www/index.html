@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>React App</title>
+    <script>
+    // var AtmBridge =  {
+    //   trace: function(method, params, sussessCall, failCall) {
+    //     console.log('yz-----params', method, params, sussessCall, failCall);
+    //   }
+    // };
+    // window.AtmBridge = AtmBridge;
+    //https://d.alicdn.com/alilog/mlog/aplus.js?id=
+    (function(w, d, s, q, i) {
+      w[q] = w[q] || [];
+      var f = d.getElementsByTagName(s)[0],j = d.createElement(s);
+      j.async = true;
+      j.id = 'beacon-aplus';
+      j.src = './aplus_cloud.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'aplus_queue', '203131281');
+
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['globalproperty', {
+        a: 11,
+        b: 22,
+        c: 33
+      }]
+    });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['aplus-waiting', 'MAN']
+    });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['appKey', '30750468']
+    })
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['aplus-rhost-v', 'aplus2-app-api-release.emas-poc.com']
+    });
+
+    // aplus_queue.push({
+    //   action: 'aplus.setMetaInfo',
+    //   arguments: ['aplus-rhost-g', 'aplus2-app-api-release.emas-poc.com']
+    // });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['_anony_id', 'test666666']
+    });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['_dev_id', 'a_test_dev_id']
+    });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['_user_id', 'a_test_user_id']
+    });
+
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['_user_nick', 'a_test_user_nick']
+    });
+
+    function myFunction() {
+      aplus_queue.push({
+        action: 'aplus.record',
+        arguments: ['test_clk', 'CLK', {
+          a: 1,
+          b: 2
+        }]
+      });
+    };
+
+    function setGlobalProperty() {
+      aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['globalproperty', {
+        a: 11,
+        b: 22,
+        c: 33
+      }]
+    });
+    };
+
+    function sentPV() {
+      aplus_queue.push({
+        action: 'aplus.sendPV',
+        arguments: [{
+          is_auto: false
+        }, {
+          aaaaaaaaaaaaaaaa: 1,
+          bbbbbbbbbbbbbbbb: 2,
+        }]
+      });
+    };
+   </script>
+</head>
+
+<body>
+<div id="root">
+    <h1>H5页面测试Demo</h1>
+    <button onclick="myFunction()">测试点击</button>
+    <button onclick="sentPV()">测试PV</button>
+</div>
+</body>
+
+</html>
+
+<script>
+</script>
