@@ -24,7 +24,7 @@
     NSString *domain=[defaults objectForKey:@"UMDomain"];
     if ([UMDemoUtils isEmptyString:domain]) {
     
-        [UMDemoUtils sharedInstance].domain=@"https://log-api.aplus.emas-poc.com";
+        [UMDemoUtils sharedInstance].domain=@"https://您的域名";
    
     }else{
         [UMDemoUtils sharedInstance].domain=domain;
@@ -32,7 +32,7 @@
     //appkey
     NSString *appkey=[defaults objectForKey:@"UMAppkey"];
     if ([UMDemoUtils isEmptyString:appkey]) {
-        [UMDemoUtils sharedInstance].appkey=@"44624933";
+        [UMDemoUtils sharedInstance].appkey=@"您的appkey";
     }else{
         [UMDemoUtils sharedInstance].appkey=appkey;
     }
