@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		830547F12621BB1400F7F60E /* UMWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830547EF2621BB1400F7F60E /* UMWKWebViewController.m */; };
 		830547F92621BC2100F7F60E /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 830547F62621BC2100F7F60E /* index.html */; };
-		830547FA2621BC2100F7F60E /* aplus_cloud.js in Resources */ = {isa = PBXBuildFile; fileRef = 830547F72621BC2100F7F60E /* aplus_cloud.js */; };
 		830547FB2621BC2100F7F60E /* Umeng.js in Resources */ = {isa = PBXBuildFile; fileRef = 830547F82621BC2100F7F60E /* Umeng.js */; };
 		830547FF2621C1A700F7F60E /* UMSpm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C3FDAB25F6191700856429 /* UMSpm.framework */; };
 		83C3FDAE25F6191700856429 /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C3FDAA25F6191700856429 /* UMCommonLog.framework */; };
@@ -39,6 +38,7 @@
 		83F83FEF25F0CA1C0048E660 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83F83FEC25F0CA1C0048E660 /* 1.jpg */; };
 		83F8402525F0CDA30048E660 /* UMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F8402425F0CDA30048E660 /* UMListViewController.m */; };
 		83F8402B25F0CDB90048E660 /* UMContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F8402A25F0CDB90048E660 /* UMContentController.m */; };
+		C8A90E5A2851D23100315CDC /* aplus_cloud_um.js in Resources */ = {isa = PBXBuildFile; fileRef = C8A90E592851D23100315CDC /* aplus_cloud_um.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		830547EF2621BB1400F7F60E /* UMWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMWKWebViewController.m; sourceTree = "<group>"; };
 		830547F02621BB1400F7F60E /* UMWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMWKWebViewController.h; sourceTree = "<group>"; };
 		830547F62621BC2100F7F60E /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		830547F72621BC2100F7F60E /* aplus_cloud.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aplus_cloud.js; sourceTree = "<group>"; };
 		830547F82621BC2100F7F60E /* Umeng.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Umeng.js; sourceTree = "<group>"; };
 		83C3FDAA25F6191700856429 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
 		83C3FDAB25F6191700856429 /* UMSpm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSpm.framework; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		83F8402925F0CDB90048E660 /* UMContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMContentController.h; sourceTree = "<group>"; };
 		83F8402A25F0CDB90048E660 /* UMContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMContentController.m; sourceTree = "<group>"; };
 		C848CBEF27571BBD00C64D94 /* UMDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UMDemo.entitlements; sourceTree = "<group>"; };
+		C8A90E592851D23100315CDC /* aplus_cloud_um.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aplus_cloud_um.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,8 @@
 		830547F52621BC2100F7F60E /* www */ = {
 			isa = PBXGroup;
 			children = (
+				C8A90E592851D23100315CDC /* aplus_cloud_um.js */,
 				830547F62621BC2100F7F60E /* index.html */,
-				830547F72621BC2100F7F60E /* aplus_cloud.js */,
 				830547F82621BC2100F7F60E /* Umeng.js */,
 			);
 			path = www;
@@ -376,10 +376,10 @@
 				83C3FDB025F6191700856429 /* UMCommonLog.bundle in Resources */,
 				83F83FEE25F0CA1C0048E660 /* 3.jpg in Resources */,
 				83F83F6E25F07CB10048E660 /* LaunchScreen.storyboard in Resources */,
-				830547FA2621BC2100F7F60E /* aplus_cloud.js in Resources */,
 				83F83F6B25F07CB10048E660 /* Assets.xcassets in Resources */,
 				83F83FEF25F0CA1C0048E660 /* 1.jpg in Resources */,
 				830547F92621BC2100F7F60E /* index.html in Resources */,
+				C8A90E5A2851D23100315CDC /* aplus_cloud_um.js in Resources */,
 				83F83FED25F0CA1C0048E660 /* 2.jpg in Resources */,
 				83F83F6925F07CB00048E660 /* Main.storyboard in Resources */,
 				830547FB2621BC2100F7F60E /* Umeng.js in Resources */,

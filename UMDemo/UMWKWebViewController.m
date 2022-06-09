@@ -32,6 +32,7 @@
     webView =[[WKWebView alloc] initWithFrame:CGRectMake(0, 20, mainScreenRC.size.width, mainScreenRC.size.height)];
     webView.navigationDelegate = self;
     webView.UIDelegate = self;
+    [UMSpmHybrid attach:webView];
     [self.view addSubview:webView];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
