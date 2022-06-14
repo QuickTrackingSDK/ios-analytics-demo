@@ -173,7 +173,7 @@
     _propertLabel.frame = CGRectMake(20, 330, 280, 200);
     _propertLabel.numberOfLines = 0;//表示label可以多行显示
 
-    NSString * propertStr =[[NSString alloc]initWithFormat:@"当前全局参数:%@",[UMDemoUtils JSONFragment:[MobClick getSuperProperties]]];
+    NSString * propertStr =[[NSString alloc]initWithFormat:@"当前全局参数:%@",[UMDemoUtils JSONFragment:[MobClick getGlobalProperties]]];
 
     _propertLabel.text=propertStr;
     [self.view addSubview:_propertLabel];
